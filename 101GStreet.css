@@ -1,0 +1,88 @@
+/* CSS for proper layout in Orchestration Module */
+
+.Menu,
+.Header_title,
+.Header_user {
+  display: none !important;
+}
+
+.Header {
+  box-shadow: none;
+  border: none;
+  z-index: 10;
+}
+
+.Content.ThemeGrid_Wrapper {
+  background: white;
+  position: relative !important;
+  left: 0px !important;
+}
+
+.MainContent {
+  margin-top: 100px;
+  font-family: Montserrat !important;
+}
+
+.Button,
+.Button.IsDefault {
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  font-family: Montserrat, sans-serif;
+}
+
+/* ================================================= */
+/* ------- DO NOT DELETE CSS ABOVE THIS LINE ------- */
+/* ================================================= */
+
+/* CSS for styling.  Make changes if necessary.  Should normalize buttons, inputs, tables, and other styling.  If you need to override these to fit custom styling you can overwrite these, but please only do so in your page.  Custom class/web block styling is probably better when necessary. */
+
+select,
+input {
+  border: none !important;
+  border-radius: none !important;
+  border-bottom: 1px solid black !important;
+  box-shadow: none !important;
+  font-family: Montserrat, sans-serif;
+}
+
+/* Styling for this section is for tables.  Can be changed if needed.*/
+.EditableTable,
+.ControlActions {
+  border: none !important;
+  background: transparent !important;
+}
+
+td,
+th {
+  border: none !important;
+  color: black;
+}
+
+/* Normalizes Pagination Styles */
+.ListNavigation_Wrapper a,
+.ListNavigation_Ellipsis {
+  border: none !important;
+  box-shadow: none !important;
+  font-family: Montserrat;
+}
+
+.ListNavigation_Previous:before {
+  content: '\f053' !important;
+}
+
+.ListNavigation_Next:after {
+  content: '\f054' !important;
+}
+
+.Feedback_Message_Error {
+  background-color: #ff0062 !important;
+}
+
+.Feedback_Message_Success {
+  background-color: #5c43e5 !important;
+}
+
+/* ================================================== */
+/* ------- CUSTOM CSS BELONGS BELOW THIS LINE ------- */
+/* ================================================== */
