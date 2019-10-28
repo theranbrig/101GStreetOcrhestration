@@ -83,6 +83,18 @@ th {
   background-color: #5c43e5 !important;
 }
 
+body.ModalOpened .ModalContainer {
+    top: 15%;
+    bottom: unset!important;
+    max-width: unset!important;
+    width: 90%!important;
+}
+
+div[id*='wtListContainer'] {
+    overflow-y: scroll!important;
+    height: 40vh!important;
+}
+
 /* ================================================== */
 /* ------- CUSTOM CSS BELONGS BELOW THIS LINE ------- */
 /* ================================================== */
