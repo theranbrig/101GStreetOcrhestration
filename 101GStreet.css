@@ -44,6 +44,7 @@ input {
   border-bottom: 1px solid black !important;
   box-shadow: none !important;
   font-family: Montserrat, sans-serif;
+  border-radius: 0px !important;
 }
 
 /* Styling for this section is for tables.  Can be changed if needed.*/
@@ -65,14 +66,17 @@ th {
   border: none !important;
   box-shadow: none !important;
   font-family: Montserrat;
+  color: black;
 }
 
 .ListNavigation_Previous:before {
   content: '\f053' !important;
+  color: black !important;
 }
 
 .ListNavigation_Next:after {
   content: '\f054' !important;
+  color: black !important;
 }
 
 .Feedback_Message_Error {
@@ -84,17 +88,49 @@ th {
 }
 
 body.ModalOpened .ModalContainer {
-    top: 15%;
-    bottom: unset!important;
-    max-width: unset!important;
-    width: 90%!important;
+  top: 15%;
+  bottom: unset !important;
+  max-width: unset !important;
+  width: 90% !important;
 }
 
 div[id*='wtListContainer'] {
-    overflow-y: scroll!important;
-    height: 40vh!important;
+  overflow-y: scroll !important;
+  height: 40vh !important;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('//fonts.googleapis.com/css?family=Montserrat:600&display=swap') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.TableRecords {
+  border: none !important;
+}
+
+.TableRecords th,
+.TableRecords td,
+td.TableRecords_OddLine,
+td.TableRecords_EvenLine {
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: white !important;
+  border: none;
+}
+
+.TableRecords td input,
+.TableRecords select {
+  font-family: 'Montserrat', sans-serif !important;
+  border: none !important;
+  border-radius: 0px !important;
+  border-bottom: 1px solid black !important;
+}
+
+select[disabled='disabled'] {
+  background: white !important;
+  box-shadow: none !important;
+}
 /* ================================================== */
 /* ------- CUSTOM CSS BELONGS BELOW THIS LINE ------- */
 /* ================================================== */
